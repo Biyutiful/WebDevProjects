@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset = "utf-8">
+    <title>BIYU</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    	<!-- THEME -->
+		<link rel="stylesheet" type="text/css" href=../CSS/BIYU_js.css>
+        <link rel="stylesheet" type="text/css" href=../CSS/theme.css>
+      <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    </head> 
+    <!--navigation -->
+        <nav>
+          <input type = "checkbox" id="check">
+            <label for = "check" class = "checkbtn">
+              <i class ="fa fa-th-list"></i>
+            </label>
+          <label class = "logo"><a class="active" href="BIYU_Lobby.html"><span class="d-none d-lg-block">(っ◔◡◔)っ</span><i class= "fa fa-heart"></i></a></label>
+          <ul>
+            <li><a href="BIYU_Home.html"><i class= "fa fa-home"></i><span class="d-none d-lg-block"> Home</span></a></li>
+            <li><a href="BIYU_Aboutme.html"><i class= "	fa fa-user-circle"></i><span class="d-none d-lg-block"> About Me</span></a></li>
+            <li><a href="BIYU_Futureme.html"><i class= "fa fa-plane"></i><span class="d-none d-lg-block"> Future Me</span></a></li>
+            <li><a href="BIYU_nocss.html"><i class='fal fa-browser'></i><span class="d-none d-lg-block"> No CSS</span></a></li>
+            <li><a href="BIYU_noburger.html"><i class= 'fas fa-sandwich'></i><span class="d-none d-lg-block"> No Burger</span></a></li>
+            <li><a href="BIYU_calc.html"><i class='fad fa-calculator-alt'></i></i><span class="d-none d-lg-block"> Calculator</span></a></li>
+            <li><a class = "active" href="BIYU_java.html"><i class='fad fa-calculator-alt'></i></i><span class="d-none d-lg-block"> Javascript</span></a></li>
+          </ul>
+        </nav>
+    <body> 
+      <section>
+        <div class = "contain">
+            <img src = "../Image/port.gif"><br>
+            <button class = "btn" onClick="enter()">Enter Portal</button>
+            <button class = "btn"onClick="exit()">Leave Portal</button>
+        </div>
+          <div class = "contain">
+            <button class = "btn" onClick="confirms()">Continue</button>              
+            <p id="landing"></p>
+            <p id="chara"></p>
+            <p id="scene"></p>
+          </div>
+        </section>
+        <section>
+          <h1>Choose Your Class</h1>
+
+        <div class = "row">
+          <div class = "column">
+            <div class = "container">
+              <div class = "column-text">
+              <h1>Warrior</h1>
+              <img id ="imgmod" src = "../Image/warrior.png" alt="Warrior" onclick="modal(this)" class="modal-hover-opacity">               
+
+                  <button class="accord">Description</button>
+                  <div class="panel">
+                  <p>A master of martial combat, skilled with a variety of weapons and armor</p>
+                  </div>
+                <div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "column">
+            <div class = "container">
+              <div class = "column-text">
+              <h1>Mage</h1>
+              <img id ="imgmod" src = "../Image/wizard.png" alt="Wizard" onclick="modal(this)" class="modal-hover-opacity">
+
+                <div>
+                <button class="accord">Description</button>
+                  <div class="panel">
+                  <p>A scholarly magic-user capable of manipulating the structures of reality.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "column">
+          <div class = "container">
+          <div class = "column-text">
+          <h1>Rogue</h1>
+          <img id ="imgmod" src = "../Image/rogue.png" alt="Rogue" onclick="modal(this)" class="modal-hover-opacity">
+
+          <div>
+          <button class="accord">Description</button>
+          <div class="panel">
+          <p>A scoundrel who uses stealth and trickery to overcome obstacles and enemies.</p>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "column">
+                  <div class = "container">
+                    <div class = "column-text">            
+                      <h1>Bard</h1>
+                      <img id ="imgmod" src = "../Image/bard.png" alt="Bard" onclick="modal(this)" class="modal-hover-opacity">
+                    
+                      <div>
+                      <button class="accord">Description</button>
+                      <div class="panel">
+                        <p>An inspiring magician whose power echoes the music of creation.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+
+                  <div class = "column">
+                  <div class = "container">
+                  <div class = "column-text">
+                    <h1>Artificier</h1>
+                      <img id ="imgmod" src = "../Image/artificier.png" alt="Artificier" onclick="modal(this)" class="modal-hover-opacity">
+                      <div>
+                      <button class="accord">Description</button>
+                      <div class="panel">
+                        <p>Masters of invention, artificers use ingenuity and magic to unlock extraordinary capabilities in objects.</p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                  <div class = "column">
+                  <div class = "container">
+                  <div class = "column-text">
+                    <h1>Priest</h1>
+                      <img id ="imgmod" src = "../Image/priest.png" alt="Priest" onclick="modal(this)" class="modal-hover-opacity">
+                      <div>
+                      <button class="accord">Description</button>
+                      <div class="panel">
+                        <p>A priestly champion who wields divine magic in service of a higher power.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+          </div>
+          <div id="modal01" class="modal" onclick="this.style.display='none'">
+            <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div class="modal-content">
+              <img id="img01" style="max-width:100%">
+            </div>
+          </section>
+          &nbsp
+          <section>
+            <div class = "contain">
+              <h1>Dungeon Master List</h1>
+              <h1>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - </h1>
+              <h2>Players</h2>
+                  <div id="data_options">
+                    <input type="text" name="character[]" class="data_options" placeholder="Character Name">
+                  </div>
+                  <div class="controls">
+                    <a href="#" id="add"><i class="fa fa-plus" onclick="fields()"></i></a>
+                    <a href="#" id="remove"><i class="fa fa-minus" onclick="fields()"></i></a>
+                  </div>
+            </div>
+          </section>
+        <!-- JAVASCRIPT -->
+        <script src ="BIYU_java.js"></script>
+    </body>
+</html>

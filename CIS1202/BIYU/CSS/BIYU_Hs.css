@@ -1,0 +1,188 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom right, #E7AB79, #B25068, #774360, #E7AB79);
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display';
+    font-size: 22px;
+    border: #ddd;
+}
+
+h1 {
+  text-shadow: 4px 4px #4C3A51;
+}
+
+img {
+    border: 5px solid #4C3A51;
+  }
+
+.container {
+  background: #774360;
+  margin: auto;
+  max-width: 1000px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-text{
+  display: inline-flex;
+  padding: 2rem;
+  grid-template-columns: 300px 2fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+} 
+.column-text img{
+  width: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 33.33%;
+  max-width: 33.33%;;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.container-form {
+  background: #ddd;
+  max-width: 470px;
+  margin: auto;
+  text-align: Left;
+}
+
+.form{
+  width: auto;
+  text-align: left;
+  margin: auto;
+  color: #774360;
+  text-shadow: 2px 2px 4px #B25068;
+}
+
+fieldset {
+  margin: auto;
+  max-width: 400px;
+  text-align: left;
+}
+
+legend{
+  text-align: center;
+}
+
+.gender{
+  text-align: center;
+}
+
+label > input[type="text"] + * {
+  display: inline-flex;
+  padding: 0.5rem 1.3rem;
+}
+
+label > input[type="checkbox"] + * {
+  display: inline-flex;
+  padding: 0.5rem 1.3rem;
+}
+
+label > input[type="checkbox"] {
+  display: none;
+}
+label > input[type="checkbox"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.3rem;
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: gray;
+  flex-shrink: 0;
+}
+
+label > input[type="checkbox"]:checked + * {
+  color: #B25068;
+}
+
+label > input[type="checkbox"]:checked + *::before {
+  content: "✓";
+  color: white;
+  text-align: center;
+  background: #B25068;
+  border-color: #B25068;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px 0 22px 0;
+  display: block;
+  border: 1px;
+  border-radius: 4px 10;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #B25068;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-style: bold;
+  font-family: 'Playfair Display';
+}
+
+input[type=submit]:hover {
+  background-color: #E7AB79;
+  color: black;
+  font-style: italic;
+  font-family: 'Playfair Display';
+}
+
+@media screen and (max-width: 1920px)
+{
+
+}
+
+@media screen and (max-width: 1366px)
+{
+    .column-text{
+    flex-direction: column;
+    text-align: center;
+  }
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+   .column-text{
+    flex-direction: column;
+    text-align: center;
+  }
+}

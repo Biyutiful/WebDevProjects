@@ -1,0 +1,76 @@
+    *{
+        box-sizing: border-box;
+    }
+  
+    body {
+        background: linear-gradient(to bottom right, #E7AB79, #B25068, #774360, #4C3A51);
+        text-align: center;
+        color: white;
+        font-family: 'Playfair Display';
+        font-size: 22px;
+        border: #ddd;
+    }
+
+    h1 {
+        text-shadow: 4px 4px #4C3A51;
+    }
+  
+    img {
+        border: 5px solid #4C3A51;
+    }
+
+    .container {
+        max-width: 400px;
+        margin: 10vh auto 0 auto;
+        border: 5px solid#4C3A51;
+        border-radius: 12px;
+        background-color: #E7AB79;
+        font-family: 'Orbitron';
+        padding: 30px 8px;
+    }
+
+    #output {
+        text-align: right;
+        height: 70px;
+        line-height: 70px;
+        padding: 16px 8px;
+        font-size: 25px;
+        border: 1px solid #ddd;
+        background-color: #4C3A51;
+    }
+
+    .buttons {
+        display: grid;
+        border: 1px solid grey;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 20px 10px;
+    }
+    .buttons > div {
+        border-top: 1px solid #999;
+        border-right: 1px solid#999;
+    }
+
+    button{
+        background: none;
+        font-size: 30px;
+        font-family: 'Orbitron';
+        border-radius: 12px;
+    }
+    #btn-op{
+        background-color: #4C3A51;
+    }
+    #btn-num{
+        background-color: #B25068;
+    }
+    #equal {
+        background-color: #774360;
+        font-size: 30px;
+        font-family: 'Orbitron';
+        border-radius: 12px;
+    }
+    
+    button:hover {
+        background-color: #323330;
+        color: white;
+        transition: 0.5s ease-in-out;
+    }

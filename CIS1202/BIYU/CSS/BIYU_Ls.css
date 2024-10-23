@@ -1,0 +1,134 @@
+body {
+	background: linear-gradient(to bottom right, #E7AB79, #B25068, #774360, #4C3A51);
+	font-size: 1em;
+	text-align: center;
+    color: white;
+    font-family: 'Playfair Display';
+    font-size: 33.8px;
+    font-style:  italic;
+}
+
+img {
+    border: 5px solid #4C3A51;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-shadow: 4px 4px #4C3A51;
+}
+
+h2 {
+    text-shadow: 4px 4px #B25068;
+}
+
+/* CSS Pushable Button*/
+a{
+ text-decoration: none;
+}
+a.active{
+ background-color: #4C3A51;
+}
+.proceed-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.proceed-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+
+.proceed-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    #774360 0%,
+    #E7AB79 8%,
+    #E7AB79 92%,
+    #774360 100%
+  );
+}
+
+.proceed-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: #E7AB79;
+  background: #B25068;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .proceed-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.proceed-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.proceed-pushable:hover .proceed-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.proceed-pushable:active .proceed-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.proceed-pushable:hover .proceed-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.proceed-pushable:active .proceed-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.proceed-pushable:focus:not(:focus-visible) {
+  outline: none;
+}

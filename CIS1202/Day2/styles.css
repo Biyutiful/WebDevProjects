@@ -1,0 +1,150 @@
+
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: montserrat;
+}
+nav{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	background: #D36C44;
+	height: 80px;
+	width:100%;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav li{
+	display: inline-block;
+	margin: 0 5px;
+}
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	font-style: family;
+	text-transform: uppercase;
+}
+a.active,a:hover{
+	background: #1b9bff;
+	transition: .5s;
+}
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display:none;
+}
+#check{
+	display:none;
+}
+
+.wrapper{
+	width: 1170px;
+	margin:auto;
+}
+header{
+	background:linear-gradient(to bottom, brown, purple);
+	height: auto;
+}
+
+.welcome-text{
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	bottom: -250px;
+	left: 10px;
+	text-align: center;
+}
+.welcome-text h1{
+	text-align:center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+.welcome-text a{
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display:inline-block;
+}
+.welcome-text a:hover{
+	background: #fff;
+	color: #333;
+}
+.images-container{
+	display:flex;
+	justify-content:center;
+}
+.images-container img{
+	margin-left:5px;
+	margin-right:5px;
+	padding:20px;
+}
+img {
+  width: 450px;
+  height: 300px;
+}
+fieldset{
+  border: 1px solid rgb(255,232,57);
+  max-width: 400px;
+  margin: auto;
+}
+form
+{
+    text-align: center;
+}
+@media screen and (max-width: 1920px){
+	body{
+		background-color: brown;
+	}
+}
+@media screen and (max-width: 1366px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size:16px;
+	}
+	body{
+		background-color: pink;
+	}
+}
+@media screen and (max-width: 480px){
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2c3e50;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+	}
+	nav ul li{
+		display: block;
+	}
+	nav ul li a{
+	font-size: 20px;
+	}
+	a:hover,a.active{
+		background:blue;
+		color: #0082e6;
+	}
+#check:checked ~ul{
+	left: 0;
+}
+}
